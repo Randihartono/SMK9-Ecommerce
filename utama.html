@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | MyProducts</title>
+    <!-- Tautkan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tautkan CSS Kustom Anda -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Tautan ke Font Awesome CSS (untuk ikon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Tambahkan animasi-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Tambahkan Pengaturan Halaman -->
+    <style>
+        body {
+          /*Tambahkan gambar background Anda, ('folder/nama.jpg')*/
+            background-image: url('image/background1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+      .fa-star{
+        color: rgba(207, 207, 49, 0.941);
+      }
+
+            /* This only changes this particular animation duration */
+      .animate__animated.animate__bounce {
+        --animate-duration: 2s;
+      }
+
+      /* This changes all the animations globally */
+      :root {
+        --animate-duration: 800ms;
+        --animate-delay: 0.9s;
+      }
+    </style>
+  </head>
+  <body>
+        <!-- Navigasi Menu Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html">My Products</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="artikel.html">Artikel</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Produk</a>
+                    </li>
+                 </ul>
+            </div>
+        </nav>
+        <!-- Navigasi Menu Bar -->
+        <section id="header" class="container text-center py-5">
+          <div class="row">
+            <div class="card-body">
+              <h1 class="card-title">WELCOME TO OUR WEBSITE</h1>
+              <h5 class="card-text">Nikmati kesegaran dan keistimewaan pada produk kami. Jangan buang waktu anda, Pesan Sekarang!</h5>
+              <br><a href="#products" class="btn btn-outline-success">LIHAT PRODUK</a>
+            </div>
+            
+           
+          </div>
+
+        </section>      
+        <section id="about" class="container mt-4 py-5">
+            
+                <div class="row">
+                    <!-- Bagian kiri carousel -->
+                    <div class="col-md-6 text-left">
+                        <h2>Gallery</h2>
+                        <div class="container text-center">
+                            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExample" data-slide-to="1"></li>
+                                    <li data-target="#carouselExample" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <!-- Ubah Nama file gambarnya disini -->
+                                        <img src="image/c21.png" class="d-center w-60" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- Ubah Nama file gambarnya disini -->
+                                        <img src="image/d5.png" class="d-center w-60" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <!-- Ubah Nama file gambarnya disini -->
+                                        <img src="image/d2.png" class="d-center w-60" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                              </div>
+                            </div>
+                    </div>
+                    <!-- Carousel (Slideshow) -->
+                    
+                    <!-- Bagian kanan dengan keterangan video dan caption -->
+                    <div class="col-md-4 text-left animate__animated animate__bounce">
+                        <!-- Ubah Keterangan Tentang Produk Anda disini -->
+                        <h2>About Us</h2>
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis magni modi eligendi eaque architecto quidem, distinctio quaerat qui illo, repudiandae explicabo quo obcaecati dolorem optio corrupti error sapiente? Odit ut consequatur ullam iure corporis harum cupiditate delectus cumque itaque aperiam! Nemo at fuga expedita libero odit autem, placeat veniam eaque magnam laborum tempore unde non eius architecto obcaecati facere repellendus sunt velit dolorum consequuntur sapiente voluptatum quam distinctio. 
+                            <address>
+                                <!-- Ubah Nama dan Alamat disini --> 
+                                  <strong>MyProducts</strong><br>
+                                  Jalan Contoh No. 123<br>
+                                  Kota Contoh, 12345<br>
+                                  Telepon: (123) 456-7890<br>
+                                  Email: info@myproducts.com
+                              </address>  
+                          </p>
+                    </div>
+            </div>
+            </section>
+            <!--Section Produk-->
+        <section id="products" class="container py-5 animate__animated animate__bounce">
+            <h2>Products</h2>
+            <div class="container text-center">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="text-center">
+                        <img src="image/bakso ikan.png" class="rounded w-60 img-fluid" alt="...">
+                        <p><a class="link-opacity-25-hover" href="artikel.html#produk1">Produk 1</a></p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="text-center">
+                        <img src="image/bakso beku.png" class="rounded w-60 img-fluid" alt="...">
+                        <p><a class="link-opacity-25-hover" href="artikel.html#produk2">Produk 2</a></p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="text-center">
+                        <img src="image/ayam beku.png" class="rounded w-60 img-fluid" alt="...">
+                        <p><a class="link-opacity-25-hover" href="artikel.html#produk3">Produk 3</a></p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="text-center">
+                        <img src="image/bakso ikan.png" class="rounded w-60 img-fluid" alt="...">
+                        <p><a class="link-opacity-25-hover" href="artikel.html#produk4">Produk 4</a></p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col">
+                      <div class="text-center">
+                          <img src="image/bakso beku.png" class="rounded w-60 img-fluid" alt="...">
+                          <p><a class="link-opacity-25-hover" href="artikel.html#produk5">Produk 5</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="text-center">
+                          <img src="image/ayam beku.png" class="rounded w-60 img-fluid" alt="...">
+                          <p><a class="link-opacity-25-hover" href="artikel.html#produk6">Produk 6</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="text-center">
+                          <img src="image/bakso ikan.png" class="rounded w-60 img-fluid" alt="...">
+                          <p><a class="link-opacity-25-hover" href="artikel.html#produk7">Produk 7</a></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="text-center">
+                          <img src="image/bakso beku.png" class="rounded w-60 img-fluid" alt="...">
+                          <p><a class="link-opacity-25-hover" href="artikel.html#produk8">Produk 8</a></p>
+                        </div>
+                    </div>
+                    
+                  </div>
+                  <div class="order mt-4">
+                    <a href="https://wa.me/081275847175?text=kak%20saya%20mau%20Order%20" class="btn btn-outline-success">Order Now</a>
+                </div>
+            </div>
+        </section>
+        <!-- JANGAN DIHAPUS!! Tautkan Bootstrap JavaScript dan jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
